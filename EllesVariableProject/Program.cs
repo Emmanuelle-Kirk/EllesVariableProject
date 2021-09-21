@@ -16,12 +16,24 @@ namespace EllesVariableProject
 
             int lives;
 
+            int health;
+            Console.WriteLine("Score: 0");
+            health = 100;
+
+            Console.WriteLine("Health: " + health);
+
             string name;
             name = "Barnaby"; //Player Name
             lives = 3;
             Console.WriteLine("Lives: " + lives);
             Console.WriteLine("Your name is " + name);
             Console.WriteLine("You are a space cowboy.");
+
+            int shield;
+
+            shield = 20;
+
+            Console.WriteLine("Shield: " + shield);
 
 
             float weaponHeat;
@@ -33,8 +45,10 @@ namespace EllesVariableProject
             Console.WriteLine("WEAPON FIRED!");
             Console.WriteLine("Weapon Heat: " + weaponHeat / weaponDischarge); //Weapon heats up from being fired
 
+
             int score;
             int points;
+
 
             points = 100;
             score = 0 + points; //Score goes up by the amount of points earned
@@ -51,6 +65,26 @@ namespace EllesVariableProject
             Console.WriteLine("Four kill streak!");
             Console.WriteLine("Combo Achived!");
             Console.WriteLine("Score: " + score * multiplier);
+
+            int damage;
+            int damageCritical;
+            damage = 20;
+            damageCritical = damage * 2; //Critical Hit
+
+            Console.WriteLine("YOU'VE BEEN HIT! SHIELD BROKEN!");
+            Console.WriteLine("Shield: " + (shield - damage));
+
+            Console.WriteLine("YOU'VE BEEN HIT!");
+            Console.WriteLine("Health: " + (health - damage));
+            health = health - damage;
+            Console.WriteLine("YOU'VE BEEN HIT!");
+            Console.WriteLine("Health: " + (health - damage));
+            health = health - damage;
+            Console.WriteLine("YOU'VE BEEN HIT!");
+            Console.WriteLine("Health: " + (health - damage));
+            health = health - damage;
+            Console.WriteLine("YOU'VE BEEN HIT! CRITICAL HIT!");
+            Console.WriteLine("Health: " + (health - damageCritical)); ;
 
             Console.WriteLine("YOU DIED");
             score = 0;
