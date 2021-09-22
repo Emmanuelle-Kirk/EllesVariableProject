@@ -153,7 +153,7 @@ namespace EllesVariableProject
             Console.WriteLine("Lives: " + lives);
             Console.WriteLine("Health: " + (health - damageCritical));
             Console.WriteLine("==================");
-
+            health = health - damageCritical;
             //Death Section
 
             Console.WriteLine("YOU DIED");
@@ -163,7 +163,7 @@ namespace EllesVariableProject
             Console.WriteLine("==================");
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Lives: " + lives);
-            Console.WriteLine("Health: 0");
+            Console.WriteLine("Health: " + health);
             Console.WriteLine("==================");
 
 
